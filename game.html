@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Svetlin Stoychev</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="main-nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href=#>Game</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<section class="top-container">
+			<header class="game-showcase">
+				<canvas id="gameCanvas"></canvas>
+			</header>
+			<div class="top-box">
+				<input type="button" name="Start" onclick="startGame();" value="Start">
+				<input type="button" name="Pause" onclick="pauseGame();" value="Pause">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+			</div>
+		</section>
+		<div class="gameImage">
+			<img id="killer" src="images/spaceShip.png">
+			<img id="bullet" src="images/bullet.png">
+			<img id="bug" src="images/coronaVirus.png">
+			<img id="space" src="images/deathCorona.png">
+			<img id="gameOverImg" src="images/GameOver.png">
+		</div>
+	<script src="js/killEmAll.js"></script>
+</body>
+</html>

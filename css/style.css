@@ -1,0 +1,156 @@
+/* CSS Variables */
+
+:root {
+	--primary: #ddd;
+	--dark: #333;
+	--light: #fff;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+	color: var(--dark);
+}
+
+body {
+	display: inline-block;
+	background-image: url(../images/hexagone.jpg);
+	margin: 30px 50px;
+	line-height: 1.4;
+}
+
+img {
+	max-width: 100%;
+}
+
+.wrapper {
+	display: grid;
+	grid-gap: 20px;
+}
+
+/* Navigation */
+.main-nav ul {
+	display: grid;
+	grid-gap: 20px;
+	padding: 0;
+	list-style: none;
+	grid-template-columns: repeat(4, 1fr );
+}
+
+.main-nav {
+	position: sticky;
+	top: 0;
+}
+
+.main-nav a {
+	background: var(--primary);
+	display: block;
+	text-decoration: none;
+	padding: 0.8rem;
+	text-align: center;
+	color: var(--dark);
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+	background: var(--dark);
+	color: var(--light);
+}
+
+/* Top Container */
+.top-container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: "showcase showcase top-box";
+}
+
+.top-box {
+	grid-area: top-box;
+	background: var(--primary);
+	display: grid;
+	align-items: center;
+	box-shadow: var(--shadow);
+	padding: 1.5rem;
+	font-size: 1.3rem;
+}
+
+.top-box h1 {
+	text-align: center;
+}
+
+.top-box h4 {
+	text-align: center;
+}
+
+/* Showcase */
+.showcase {
+	grid-area: showcase;
+	min-height: 400px;
+	box-shadow: var(--shadow);
+	background: var(--primary);
+	padding: 1.5rem;
+}
+
+.showcase h1 {
+	font-size: 2rem;
+	text-align: center;
+	color: var(--dark);
+}
+
+.showcase p {
+	font-size: 1.3rem;
+	color: var(--dark);
+}
+
+.showcase img {
+	display: block;
+	margin: auto;
+	max-width: 50%;
+}
+
+/* Footer */
+footer {
+	margin-top: 2rem;
+	background: var(--dark);
+	color: var(--light);
+	text-align: center;
+	padding: 1rem;
+}
+
+@media (max-width: 700px) {
+	.top-container {
+		grid-template-areas: 
+			'showcase showcase'
+			'top-box top-box'
+	}
+
+	.main-nav ul {
+		grid-template-columns: 1fr;
+	}
+
+	.main-nav {
+		position: static;
+	}
+}
+
+.container {
+	box-shadow: var(--shadow);
+	background: var(--primary);
+	padding: 1.5rem;
+	font-size: 2rem;
+	text-align: center;
+	color: var(--dark);
+}
+
+.gameImage img {
+	display: none;
+}
+
+.game-showcase {
+	grid-area: showcase;
+	min-height: 400px;
+	box-shadow: var(--shadow);
+}
