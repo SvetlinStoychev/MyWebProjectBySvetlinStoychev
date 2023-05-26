@@ -34,7 +34,10 @@ To run this web project locally, follow these steps:
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Contact
+## Screenshot
 
-If you have any questions or suggestions regarding this project, please feel free to reach out to Svetlin Stoychev at [your-email@example.com](mailto:your-email@example.com).
+![Untitled](https://github.com/SvetlinStoychev/MyWebProjectBySvetlinStoychev/assets/133974226/759d4872-cdec-4f45-ad19-3fed8fa24b92)
+
+
+
 
