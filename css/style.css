@@ -24,6 +24,11 @@ img {
 	max-width: 100%;
 }
 
+video {
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper {
 	display: grid;
 	grid-gap: 20px;
