@@ -72,6 +72,7 @@ img {
 	background: var(--primary);
 	display: grid;
 	align-items: center;
+	align-content: flex-start;
 	box-shadow: var(--shadow);
 	padding: 1.5rem;
 	font-size: 1.3rem;
